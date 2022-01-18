@@ -1,6 +1,6 @@
 require 'socket'
 
-server  = TCPServer.new('0.0.0.0', 80)
+server  = TCPServer.new('0.0.0.0', ENV["WEB_PORT"])
 
 loop {
   client  = server.accept
