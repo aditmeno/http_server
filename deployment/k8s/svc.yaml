@@ -13,4 +13,4 @@ spec:
       targetPort: 8080
   selector:
     name: http-server
-  type: ClusterIP
+  type: LoadBalancer
