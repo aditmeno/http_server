@@ -9,6 +9,6 @@ COPY --chown=app:app http_server.rb /home/app/
 
 USER app
 
-ENV WEB_PORT=80
+ENV WEB_PORT=8080
 
 CMD [ "ruby", "/home/app/http_server.rb" ]
